@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BranchPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_logo_05" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/branchAddress"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/branchPhoneNum"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/branchWeekdayWorkingHour"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/branchWeekendWorkingHour"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bntAddDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Manage Service" />
+
+            <Button
+                android:id="@+id/bntSpecifyHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Specify Hour" />
+
+            <Button
+                android:id="@+id/bntApproveReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Manage Request" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/branchServiceOffered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:text="Services of Branch" />
+        <ListView
+            android:id="@+id/listViewService"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>
